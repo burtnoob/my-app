@@ -30,7 +30,6 @@ export default function PersonalInfoStep({ data, updateData }: PersonalInfoStepP
   })
 
   // Update parent form data when this form changes
-  const watchedValues = form.watch()
   useEffect(() => {
     const subscription = form.watch((value) => {
       if (form.formState.isValid) {
@@ -88,7 +87,7 @@ export default function PersonalInfoStep({ data, updateData }: PersonalInfoStepP
                 <FormControl>
                   <Input type="email" placeholder="john.doe@example.com" {...field} />
                 </FormControl>
-                <FormDescription>We'll never share your email with anyone else.</FormDescription>
+                <FormDescription>We&apos;ll never share your email with anyone else.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -98,4 +97,3 @@ export default function PersonalInfoStep({ data, updateData }: PersonalInfoStepP
     </div>
   )
 }
-

@@ -122,7 +122,7 @@ export default function OnboardingWizard() {
   return (
     <div className="max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold text-center mb-8">Welcome to Our Platform</h1>
-      <p className="text-muted-foreground text-center mb-10">Let's get you set up in just a few steps</p>
+      <p className="text-muted-foreground text-center mb-10">Let&apos;s get you set up in just a few steps</p>
 
       <WizardProgress steps={steps} currentStep={currentStep} />
 

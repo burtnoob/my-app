@@ -31,7 +31,6 @@ export default function CompanyInfoStep({ data, updateData }: CompanyInfoStepPro
   })
 
   // Update parent form data when this form changes
-  const watchedValues = form.watch()
   useEffect(() => {
     const subscription = form.watch((value) => {
       if (form.formState.isValid) {
@@ -142,4 +141,3 @@ export default function CompanyInfoStep({ data, updateData }: CompanyInfoStepPro
     </div>
   )
 }
-

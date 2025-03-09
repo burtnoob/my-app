@@ -30,7 +30,6 @@ export default function RoleSelectionStep({ data, updateData }: RoleSelectionSte
   })
 
   // Update parent form data when this form changes
-  const watchedValues = form.watch()
   useEffect(() => {
     const subscription = form.watch((value) => {
       if (form.formState.isValid) {
@@ -67,7 +66,7 @@ export default function RoleSelectionStep({ data, updateData }: RoleSelectionSte
     <div className="space-y-6">
       <div>
         <h2 className="text-2xl font-bold">Your Role & Use Case</h2>
-        <p className="text-muted-foreground">Help us understand how you'll be using our platform</p>
+        <p className="text-muted-foreground">Help us understand how you&apos;ll be using our platform</p>
       </div>
 
       <Form {...form}>
@@ -120,4 +119,3 @@ export default function RoleSelectionStep({ data, updateData }: RoleSelectionSte
     </div>
   )
 }
-

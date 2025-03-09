@@ -33,7 +33,6 @@ export default function PreferencesStep({ data, updateData }: PreferencesStepPro
   })
 
   // Update parent form data when this form changes
-  const watchedValues = form.watch()
   useEffect(() => {
     const subscription = form.watch((value) => {
       if (form.formState.isValid) {
@@ -132,8 +131,8 @@ export default function PreferencesStep({ data, updateData }: PreferencesStepPro
             render={() => (
               <FormItem>
                 <div className="mb-4">
-                  <FormLabel className="text-base">Features You're Interested In</FormLabel>
-                  <FormDescription>Select the features you'd like to explore first</FormDescription>
+                  <FormLabel className="text-base">Features You&apos;re Interested In</FormLabel>
+                  <FormDescription>Select the features you&apos;d like to explore first</FormDescription>
                 </div>
                 {features.map((feature) => (
                   <FormField
@@ -173,4 +172,3 @@ export default function PreferencesStep({ data, updateData }: PreferencesStepPro
     </div>
   )
 }
-
